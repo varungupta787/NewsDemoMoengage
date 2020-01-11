@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.activity.NewsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/white"
+        android:elevation="5dp"
+        app:contentInsetLeft="0dp"
+        app:title="News Demo Application"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/news_recyclerview"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:background="@android:color/darker_gray"
+        android:clipToPadding="false"
+        />
+    <LinearLayout
+        android:id="@+id/no_internet_screen"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:textColor="@android:color/darker_gray"
+            android:text="No internet available..!!!"/>
+        <Button
+            android:id="@+id/try_again_botton"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            style="@style/CardView"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="25sp"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:text="Try Again"/>
+    </LinearLayout>
+
+</RelativeLayout>

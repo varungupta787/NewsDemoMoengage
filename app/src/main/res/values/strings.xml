@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">NewsDemo</string>
+    <string name="news_api_key">ec1997c8a19c4ae6b6fb361be25991dd</string>
+    <string name="news_detail_loading_error">Oh no! Error while loading news details. Please try again</string>
+</resources>

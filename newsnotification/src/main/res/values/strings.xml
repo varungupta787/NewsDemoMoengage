@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">NewsNotification</string>
+
+    <string-array name="news_sources">
+        <item>Tech Crunch News</item>
+        <item>Business News</item>
+        <item>Wall Street Journal News</item>
+
+    </string-array>
+</resources>

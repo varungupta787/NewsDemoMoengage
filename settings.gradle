@@ -1,0 +1,2 @@
+include ':app', ':newsnotification'
+rootProject.name='NewsDemo'
